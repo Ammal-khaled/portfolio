@@ -97,19 +97,27 @@ export default function FeaturedCaseStudies() {
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <div className="relative overflow-hidden rounded-[2rem] border border-[#e7e2d8] bg-white p-5 shadow-[0_24px_80px_rgba(31,41,51,0.08)]">
                     <div className="aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-[#dceef2] via-white to-[#eee9f7]">
-                      <div className="flex h-full items-center justify-center p-8 text-center">
-                        <div>
-                          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#667085]">
-                            Project Preview
-                          </p>
-                          <p className="mt-4 text-2xl font-semibold text-[#183c40]">
-                            {project.title}
-                          </p>
-                          <p className="mt-2 text-sm text-[#667085]">
-                            {project.status} · {project.year}
-                          </p>
+                      {project.image ? (
+                        <img
+                          src={project.image}
+                          alt={`${project.title} preview`}
+                          className="h-full w-full object-cover object-top transition duration-500 hover:scale-[1.03]"
+                        />
+                      ) : (
+                        <div className="flex h-full items-center justify-center p-8 text-center">
+                          <div>
+                            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#667085]">
+                              Project Preview
+                            </p>
+                            <p className="mt-4 text-2xl font-semibold text-[#183c40]">
+                              {project.title}
+                            </p>
+                            <p className="mt-2 text-sm text-[#667085]">
+                              {project.status} · {project.year}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   </div>
                 </div>
