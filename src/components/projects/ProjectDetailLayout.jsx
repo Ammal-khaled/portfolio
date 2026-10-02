@@ -87,6 +87,12 @@ export default function ProjectDetailLayout({ project }) {
                   {project.fullDescription || project.description}
                 </p>
 
+                {project.previewNote ? (
+                  <p className="mt-4 max-w-3xl rounded-2xl border border-[#d8e6df] bg-[#edf5f0] px-4 py-3 text-sm leading-6 text-[#45685a]">
+                    {project.previewNote}
+                  </p>
+                ) : null}
+
                 <div className="mt-8">
                   <ProjectActions project={project} />
                 </div>
@@ -203,7 +209,11 @@ export default function ProjectDetailLayout({ project }) {
         <section className="border-t border-[#e7e2d8] py-20">
           <div className="mx-auto max-w-6xl px-6">
             <Reveal>
-              <ProjectGallery images={project.gallery} title={project.title} />
+              <ProjectGallery
+                images={project.gallery}
+                title={project.title}
+                previewNote={project.previewNote}
+              />
             </Reveal>
           </div>
         </section>

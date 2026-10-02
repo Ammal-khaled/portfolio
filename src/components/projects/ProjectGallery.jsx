@@ -1,4 +1,4 @@
-export default function ProjectGallery({ images = [], title }) {
+export default function ProjectGallery({ images = [], title, previewNote }) {
   if (!images.length) {
     return (
       <div className="rounded-[2rem] border border-[#e7e2d8] bg-white p-8 text-center">
@@ -17,11 +17,20 @@ export default function ProjectGallery({ images = [], title }) {
           Gallery
         </p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#183c40] md:text-4xl">
-          Screens and visual previews
+          Project visuals
         </h2>
+        {previewNote ? (
+          <p className="mt-3 max-w-2xl text-sm leading-6 text-[#667085]">
+            {previewNote}
+          </p>
+        ) : null}
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div
+        className={`grid gap-6 ${
+          images.length === 1 ? "max-w-3xl" : "md:grid-cols-2"
+        }`}
+      >
         {images.map((image, index) => (
           <figure
             key={`${image}-${index}`}
@@ -39,7 +48,9 @@ export default function ProjectGallery({ images = [], title }) {
             </div>
 
             <figcaption className="px-3 py-4 text-sm text-[#667085]">
-              {title} preview {index + 1}
+              {previewNote
+                ? `Illustrative preview ${index + 1} · synthetic sample data`
+                : `${title} screen ${index + 1}`}
             </figcaption>
           </figure>
         ))}

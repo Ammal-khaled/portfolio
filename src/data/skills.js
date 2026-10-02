@@ -1,5 +1,29 @@
 export const skillGroups = [
   {
+    title: "IT & Application Support",
+    skills: [
+      "Customer Support Operations",
+      "Issue Documentation",
+      "Case Escalation",
+      "CRM Workflows",
+      "Requirements Analysis",
+      "Technical Documentation",
+    ],
+  },
+  {
+    title: "QA & Testing",
+    skills: [
+      "Manual Testing",
+      "Test Cases",
+      "Bug Reports",
+      "Jira",
+      "Postman",
+      "Selenium IDE",
+      "JMeter",
+      "OWASP ZAP",
+    ],
+  },
+  {
     title: "Frontend Development",
     skills: [
       "HTML",
@@ -30,19 +54,6 @@ export const skillGroups = [
       "NoSQL",
       "Basic SQL",
       "Authentication Concepts",
-    ],
-  },
-  {
-    title: "QA & Testing",
-    skills: [
-      "Manual Testing",
-      "Test Cases",
-      "Bug Reports",
-      "Jira",
-      "Postman",
-      "Selenium IDE",
-      "JMeter",
-      "OWASP ZAP",
     ],
   },
   {

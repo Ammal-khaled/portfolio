@@ -6,7 +6,7 @@ export default function Hero() {
       <Reveal>
         <div>
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.32em] text-[#2f5d62]">
-            Frontend Development · UI/UX Design · Web Applications
+            IT & Application Support · QA · Web Development
           </p>
 
           <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-[#183c40] md:text-7xl">
@@ -14,9 +14,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#667085]">
-            Computer Information Systems fresh graduate focused on building
-            clean, user-centered web interfaces, dashboards, and workflow-based
-            systems.
+            Computer Information Systems graduate with customer-support and
+            manual-QA experience, building practical tools and user-focused
+            interfaces. Open to IT and application support, technical
+            operations, and junior development roles.
           </p>
 
           <div className="mt-8 flex items-center gap-3">

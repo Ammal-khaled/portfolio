@@ -88,13 +88,21 @@ export default function ProjectCarousel() {
                           Case Study
                         </a>
 
-                        <a
-                          href={project.liveUrl}
-                          onClick={(e) => e.stopPropagation()}
-                          className="rounded-full border border-white/70 px-5 py-2 text-sm font-semibold text-white"
-                        >
-                          Preview
-                        </a>
+                        {project.liveUrl ? (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="rounded-full border border-white/70 px-5 py-2 text-sm font-semibold text-white"
+                          >
+                            Live demo
+                          </a>
+                        ) : (
+                          <span className="rounded-full border border-white/70 px-5 py-2 text-sm font-semibold text-white">
+                            {project.previewNote ? "Illustrative preview" : "Demo link coming soon"}
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>

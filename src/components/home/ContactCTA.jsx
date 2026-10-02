@@ -42,13 +42,12 @@ export default function ContactCTA() {
                 </p>
 
                 <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">
-                  Let’s connect around frontend, UI/UX, or web development.
+                  Let’s connect around support, operations, QA, or development.
                 </h2>
 
                 <p className="mt-5 max-w-2xl text-base leading-7 text-white/75">
-                  I’m building my career around practical web interfaces,
-                  user-centered design, and systems that make real workflows
-                  easier to manage.
+                  I’m interested in roles where customer needs, reliable
+                  systems, testing, and practical development come together.
                 </p>
               </div>
 

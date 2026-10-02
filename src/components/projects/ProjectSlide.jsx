@@ -52,7 +52,7 @@ export default function ProjectSlide({ project, index }) {
             </a>
           ) : (
             <span className="rounded-full border border-[#d8d1c5] px-5 py-2.5 text-sm font-semibold text-[#667085]">
-              Preview Coming Soon
+              {project.previewNote ? "Illustrative preview" : "Demo link coming soon"}
             </span>
           )}
         </div>
