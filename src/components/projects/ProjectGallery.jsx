@@ -1,4 +1,5 @@
 export default function ProjectGallery({ images = [], title, previewNote, captions = [] }) {
+  const phoneScreenshot = title.startsWith("Comfort Home") || title.startsWith("Workforce HR");
   if (!images.length) {
     return (
       <div className="rounded-[2rem] border border-[#e7e2d8] bg-white p-8 text-center">
@@ -30,7 +31,7 @@ export default function ProjectGallery({ images = [], title, previewNote, captio
 
       <div
         className={`grid gap-6 ${
-          images.length === 1 ? "max-w-3xl" : "md:grid-cols-2"
+          images.length === 1 ? (phoneScreenshot ? "max-w-sm" : "max-w-3xl") : "md:grid-cols-2"
         }`}
       >
         {images.map((image, index) => (
@@ -38,11 +39,11 @@ export default function ProjectGallery({ images = [], title, previewNote, captio
             key={`${image}-${index}`}
             className="overflow-hidden rounded-[2rem] border border-[#e7e2d8] bg-white p-3 shadow-[0_18px_60px_rgba(47,93,98,0.08)]"
           >
-            <div className="aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-[#dceef2] via-white to-[#e3eeee]">
+            <div className={`${phoneScreenshot ? "aspect-[9/16]" : "aspect-[4/3]"} overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-[#dceef2] via-white to-[#e3eeee]`}>
               <img
                 src={image}
                 alt={`${title} preview ${index + 1}`}
-                className={`h-full w-full ${title.startsWith("AquaDesk") ? "object-contain bg-[#f4f6f7]" : "object-cover"}`}
+                className={`h-full w-full ${title.startsWith("AquaDesk") || phoneScreenshot ? "object-contain bg-[#f4f6f7]" : "object-cover"}`}
                 onError={(event) => {
                   event.currentTarget.style.display = "none";
                 }}

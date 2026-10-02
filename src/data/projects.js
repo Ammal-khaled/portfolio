@@ -2,14 +2,14 @@ export const projects = [
   {
     id: 1,
     slug: "cleaning-services-operations",
-    title: "Cleaning Services Operations App",
+    title: "Comfort Home — Cleaning Services Operations App",
     type: "Android Operations App",
     status: "Private Project · Demo Preview",
     year: "2026",
     description:
       "An operations app for coordinating cleaning-service bookings, schedules, teams, client records, and payment follow-up.",
     fullDescription:
-      "A role-based Android application designed to support the day-to-day workflow of a cleaning-services business. The app brings bookings, schedules, clients, employees, driver jobs, payment records, and operational reports into one workspace. This portfolio page uses an illustrative interface and synthetic sample records; it is not connected to the private business system or its data.",
+      "A role-based Android application designed to support the day-to-day workflow of a cleaning-services business. The app brings bookings, schedules, clients, employees, driver jobs, payment records, and operational reports into one workspace. The captured screen shows the Arabic role-selection page; no sign-in or business data was opened for this capture.",
     problem:
       "Service businesses coordinate work across booking, front-desk, field, and accounting tasks. The project explores how a shared operational app can make each step easier to find while keeping role-specific work organized.",
     role: "Android Developer · Workflow Design · QA",
@@ -28,10 +28,11 @@ export const projects = [
       "Testing payment calculations, search, time handling, and role boundaries",
       "Designing practical interfaces for front-desk and field work",
     ],
-    image: "",
-    gallery: [],
+    image: "/images/projects/comfort-home/01-comfort-home-role-selection.png",
+    gallery: ["/images/projects/comfort-home/01-comfort-home-role-selection.png"],
+    galleryCaptions: ["Comfort Home · Arabic role selection"],
     previewNote:
-      "Android application. Screenshots are not included yet because the available captures do not show this app accurately.",
+      "Actual Android app role-selection screen. No role was opened; this capture contains no signed-in session or business records.",
     liveUrl: "",
     githubUrl: "",
     figmaUrl: "",
