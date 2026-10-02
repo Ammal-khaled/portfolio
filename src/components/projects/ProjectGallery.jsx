@@ -1,4 +1,4 @@
-export default function ProjectGallery({ images = [], title, previewNote }) {
+export default function ProjectGallery({ images = [], title, previewNote, captions = [] }) {
   if (!images.length) {
     return (
       <div className="rounded-[2rem] border border-[#e7e2d8] bg-white p-8 text-center">
@@ -42,7 +42,7 @@ export default function ProjectGallery({ images = [], title, previewNote }) {
               <img
                 src={image}
                 alt={`${title} preview ${index + 1}`}
-                className="h-full w-full object-cover"
+                className={`h-full w-full ${title.startsWith("AquaDesk") ? "object-contain bg-[#f4f6f7]" : "object-cover"}`}
                 onError={(event) => {
                   event.currentTarget.style.display = "none";
                 }}
@@ -50,9 +50,10 @@ export default function ProjectGallery({ images = [], title, previewNote }) {
             </div>
 
             <figcaption className="px-3 py-4 text-sm text-[#667085]">
-              {previewNote
-                ? `Illustrative preview ${index + 1} · synthetic sample data`
-                : `${title} screen ${index + 1}`}
+              {captions[index] ||
+                (previewNote
+                  ? `Illustrative preview ${index + 1} · synthetic sample data`
+                  : `${title} screen ${index + 1}`)}
             </figcaption>
           </figure>
         ))}

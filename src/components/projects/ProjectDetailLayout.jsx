@@ -213,6 +213,7 @@ export default function ProjectDetailLayout({ project }) {
                 images={project.gallery}
                 title={project.title}
                 previewNote={project.previewNote}
+                captions={project.galleryCaptions}
               />
             </Reveal>
           </div>

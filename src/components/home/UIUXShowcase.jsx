@@ -2,7 +2,7 @@ import Reveal from "../shared/Reveal";
 import { projects } from "../../data/projects";
 
 const uiuxProjects = projects.filter((project) =>
-  ["cancare", "sair"].includes(project.slug),
+  ["cancare", "sair", "aquadesk-support-workflow"].includes(project.slug),
 );
 
 export default function UIUXShowcase() {

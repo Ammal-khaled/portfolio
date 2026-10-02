@@ -86,7 +86,7 @@ export default function FeaturedCaseStudies() {
                       </a>
                     ) : (
                       <span className="rounded-full border border-[#d8d1c5] px-6 py-3 text-sm font-semibold text-[#667085]">
-                        {project.gallery?.length ? "Demo link coming soon" : "Screenshots unavailable"}
+                        {project.figmaUrl ? "Open Figma prototype" : project.gallery?.length ? "Demo link coming soon" : "Screenshots unavailable"}
                       </span>
                     )}
                   </div>

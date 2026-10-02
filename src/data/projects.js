@@ -231,4 +231,49 @@ export const projects = [
     githubUrl: "https://github.com/Ammal-khaled/RideLink",
     figmaUrl: "",
   },
+  {
+    id: 7,
+    slug: "aquadesk-support-workflow",
+    title: "AquaDesk — Customer Support Workflow Prototype",
+    type: "Customer Support · Figma Prototype",
+    status: "Design Prototype",
+    year: "2026",
+    description:
+      "A multi-role support workflow concept for agent requests, team-lead triage, live-call guidance, and quality review.",
+    fullDescription:
+      "AquaDesk is a Figma prototype exploring how support agents request help, team leads review incoming cases, and quality staff examine post-call findings. It includes proposed states for approved knowledge, live-call guidance, an AI analysis sandbox, and report export. The screens use fictional records and illustrate a product concept; this is a design prototype, not a connected or runnable support system.",
+    problem:
+      "Support work moves between agents, team leads, and quality reviewers. This concept maps those handoffs and explores how agent guidance can stay connected to approved knowledge and later review.",
+    role: "UI/UX Workflow Design · Figma Prototype",
+    tech: ["Figma", "Customer Support", "Workflow Design", "Prototyping"],
+    features: [
+      "Agent requests for account verification and billing support",
+      "Team-lead request queue and request detail states",
+      "Approved knowledge and illustrative live-call guidance",
+      "After-call quality review and AI analysis sandbox concepts",
+      "Report export workflow concept",
+    ],
+    learnings: [
+      "Mapping handoffs across agent, team-lead, and quality roles",
+      "Keeping proposed assistance tied to approved guidance",
+      "Clearly distinguishing prototype screens from implemented integrations",
+    ],
+    image: "/images/projects/aquadesk/agent-support.png",
+    gallery: [
+      "/images/projects/aquadesk/agent-support.png",
+      "/images/projects/aquadesk/team-lead-requests.png",
+      "/images/projects/aquadesk/quality-review.png",
+    ],
+    galleryCaptions: [
+      "Agent workspace · request for support",
+      "Team lead · incoming support requests",
+      "Quality review · AI findings",
+    ],
+    previewNote:
+      "Figma prototype with fictional records. AI, call guidance, and export screens are illustrative design states.",
+    liveUrl: "",
+    githubUrl: "",
+    figmaUrl:
+      "https://www.figma.com/design/RioEHqE4hyauUFmUvGBPLh/AquaDesk-UI-UX-Prototype?node-id=13-2",
+  },
 ];
