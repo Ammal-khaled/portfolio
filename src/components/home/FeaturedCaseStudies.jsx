@@ -86,7 +86,7 @@ export default function FeaturedCaseStudies() {
                       </a>
                     ) : (
                       <span className="rounded-full border border-[#d8d1c5] px-6 py-3 text-sm font-semibold text-[#667085]">
-                        {project.previewNote ? "Illustrative preview" : "Demo link coming soon"}
+                        {project.gallery?.length ? "Demo link coming soon" : "Screenshots unavailable"}
                       </span>
                     )}
                   </div>
@@ -105,22 +105,17 @@ export default function FeaturedCaseStudies() {
                         <div className="flex h-full items-center justify-center p-8 text-center">
                           <div>
                             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#667085]">
-                              Project Preview
+                              Screenshots not included
                             </p>
                             <p className="mt-4 text-2xl font-semibold text-[#183c40]">
                               {project.title}
                             </p>
-                            <p className="mt-2 text-sm text-[#667085]">
-                              {project.status} · {project.year}
+                            <p className="mt-2 max-w-md text-sm leading-6 text-[#667085]">
+                              {project.previewNote || `${project.status} · ${project.year}`}
                             </p>
                           </div>
                         </div>
                       )}
-                      {project.previewNote ? (
-                        <span className="absolute bottom-3 left-3 rounded-full bg-white/95 px-3 py-1.5 text-[11px] font-semibold text-[#45685a] shadow">
-                          Illustrative preview · sample data
-                        </span>
-                      ) : null}
                     </div>
                   </div>
                 </div>

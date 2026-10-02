@@ -5,7 +5,9 @@ export default function ProjectGallery({ images = [], title, previewNote }) {
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#2f5d62]">
           Gallery
         </p>
-        <p className="mt-3 text-[#667085]">Screenshots will be added soon.</p>
+        <p className="mt-3 text-[#667085]">
+          {previewNote || "No screenshots are included for this project yet."}
+        </p>
       </div>
     );
   }
