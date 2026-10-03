@@ -99,7 +99,7 @@ export default function FeaturedCaseStudies() {
                         <img
                           src={project.image}
                           alt={`${project.title} preview`}
-                          className={`h-full w-full ${project.type.startsWith("Android") ? "object-contain bg-[#f1f3ff]" : "object-cover object-top"} transition duration-500 hover:scale-[1.03]`}
+                          className={`h-full w-full ${project.type.startsWith("Android") || project.slug === "government-services-redesign" ? "object-contain bg-[#f1f3ff]" : "object-cover object-top"} transition duration-500 hover:scale-[1.03]`}
                         />
                       ) : (
                         <div className="flex h-full items-center justify-center p-8 text-center">

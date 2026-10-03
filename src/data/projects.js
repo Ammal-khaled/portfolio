@@ -305,4 +305,49 @@ export const projects = [
     figmaUrl:
       "https://www.figma.com/design/RioEHqE4hyauUFmUvGBPLh/AquaDesk-UI-UX-Prototype?node-id=13-2",
   },
+  {
+    id: 8,
+    slug: "government-services-redesign",
+    title: "Government Services App — Confidential UI/UX Redesign",
+    type: "Mobile UI/UX Redesign · Figma Prototype",
+    status: "Confidential · Design Prototype",
+    year: "2026",
+    description:
+      "A confidential mobile redesign concept for discovering public services and completing a guided application flow.",
+    fullDescription:
+      "A Figma redesign concept for an unnamed government-services mobile app. The prototype explores a service dashboard, service browsing, application details, document upload, and a three-step submission flow. The portfolio case study leaves out the agency name. This is a design prototype, not an implemented or deployed app.",
+    problem:
+      "People need to find the right public service, understand its requirements, and complete an application with confidence. This redesign organizes those steps into a consistent mobile journey.",
+    role: "UI/UX Designer · User Flow Design · Figma Prototyping",
+    tech: ["Figma", "Mobile UI/UX", "User Flows", "Prototyping"],
+    features: [
+      "Service dashboard and category-based browsing",
+      "Service details and application entry point",
+      "Three-step application flow for details, documents, and review",
+      "English and Arabic screen designs",
+    ],
+    learnings: [
+      "Structuring a multi-step application journey for mobile",
+      "Maintaining consistent navigation and status cues across screens",
+      "Preparing a confidential concept for portfolio presentation",
+    ],
+    image:
+      "/images/projects/government-services-redesign/government-services-flow-overview.png",
+    gallery: [
+      "/images/projects/government-services-redesign/government-services-dashboard.png",
+      "/images/projects/government-services-redesign/government-services-application-form.png",
+      "/images/projects/government-services-redesign/government-services-document-upload.png",
+    ],
+    galleryCaptions: [
+      "Dashboard preview · demo content",
+      "Application details · sample placeholders",
+      "Document upload · illustrative requirements",
+    ],
+    previewNote:
+      "Portfolio visuals use demo labels and sample placeholders. This is a Figma prototype only; no live government service is connected.",
+    liveUrl: "",
+    githubUrl: "",
+    figmaUrl:
+      "https://www.figma.com/design/rQzc7OOdGrG4HY0N1b0Jtv/demo?node-id=0-1",
+  },
 ];

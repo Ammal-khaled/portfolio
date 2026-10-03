@@ -1,5 +1,8 @@
 export default function ProjectGallery({ images = [], title, previewNote, captions = [] }) {
-  const phoneScreenshot = title.startsWith("Comfort Home") || title.startsWith("Workforce HR");
+  const phoneScreenshot =
+    title.startsWith("Comfort Home") ||
+    title.startsWith("Workforce HR") ||
+    title.startsWith("Government Services App");
   if (!images.length) {
     return (
       <div className="rounded-[2rem] border border-[#e7e2d8] bg-white p-8 text-center">
